@@ -56,6 +56,9 @@
   #homepage .box_homepage .row_main .col-left .affix{
     display: contents !important;
   }
+  .bottom-header .box .dropdown{
+    padding: 10px;
+  }
 }
 
 /* screen > min */
