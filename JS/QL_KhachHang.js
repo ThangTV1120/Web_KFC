@@ -6,8 +6,13 @@ let customer=[
     },
     {
         name:'Nguyễn Văn B',
-        sdt:'09357213',
+        sdt:'093572213',
         diachi:'Số 44 /131, phường Hoàng Mai, quận Hoàng Kiếm ,HCM',
+    },
+    {
+        name:'Nguyễn Văn C',
+        sdt:'093343423',
+        diachi:'Số 44 /131, phường Giáp Bát, Quận Hoàng Mai , Hà Nội',
     }
 ]
 function read(){
