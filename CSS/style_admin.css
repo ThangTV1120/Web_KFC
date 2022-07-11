@@ -1,0 +1,36 @@
+body{
+    /* background-color:red ; */
+    background-image: url(/images/bg.jpg);
+}
+
+header .navbar {
+    padding: 0;
+}
+header img{
+    height: 50px;
+    width: 30px;
+}
+header .nav-item:hover .nav-link{
+    background-color: #000;
+    color: white;
+}
+header .nav-item .nav-link {
+color: #000;
+font-size: 20px;
+text-transform: uppercase;
+font-weight: bold;
+}
+header .nav-item .dropdown-menu .dropdown-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logout i{
+    font-size: 30px;
+    line-height: 17px;
+    padding: 10px;
+    color: #000;
+}
+.main-QLK #add,#update{
+   width: 20%;
+}

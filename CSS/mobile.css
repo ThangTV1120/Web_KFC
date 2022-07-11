@@ -1,0 +1,84 @@
+/* màn hình Mobile */
+/* screen< Max */
+@media only screen and (max-width: 990px) { 
+    .top-header  {display: none;}
+    .main-header .pc_main  {display: none;}
+    /* .main-header .respon  {display: block !important;} */
+  }
+
+@media only screen and (max-width: 990px) { 
+    .bottom-header .deliver_box {
+    position:revert;
+    justify-content: space-between;
+    padding: 1.111111111111111rem;
+    width: 100%;
+
+    }
+    .bottom-header .navbar-scroller .nav{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap; 
+
+    }
+    .bottom-header .navbar-scroller .nav .nav-link{
+        font-size: 1.9rem;
+    }
+    /* .bottom-header .box  {display: none;} */
+    
+    header .affix{
+        z-index: 3;
+        width: 100%;
+        max-width: 750px;
+    }
+   .bottom-header .deliver_wap span{
+     font-size: 1.555555555555556rem;
+   }
+   /* #homepage .box_homepage .row_main .col-right, */
+   #homepage .box_homepage .row_main .col-left .nav .nav_menu_header{
+     display: none;
+   }
+   #homepage .box_homepage .row_main .col-left .nav .nav_menu{
+
+   display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: flex-start;
+    
+  }
+  #homepage .box_homepage .row_main .col-left .nav .nav_menu .nav-link{
+    border-color: #e4002e;
+    color: black;
+    font-size: 160%;
+   
+  }
+  #homepage .box_homepage .row_main .col-left .affix{
+    display: contents !important;
+  }
+}
+
+/* screen > min */
+  @media only screen and (min-width: 990px){
+    .bottom-header .deliver_box{
+      justify-content: space-between;
+      align-items: center; 
+      position: absolute;
+      max-width: 300px;
+      height: 56px;
+     right: 240px;
+     bottom:0;
+  } 
+  header .affix {
+      top: 0;
+      z-index: 999;
+      width: 1024px;
+    }
+  
+  #homepage .affix{
+      top: 56px;
+      z-index: 2 ;
+      width: 215px;
+  }
+
+  }

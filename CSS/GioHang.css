@@ -1,0 +1,27 @@
+body{
+    background: url(/images/bg.jpg) repeat top center fixed;
+    height: 1000px;
+    font-weight: 400;
+    color: #707070;
+}
+.container .menu div{
+    padding: 0;
+}
+.container .parent .border-bottom{
+    margin: 0;
+    padding: 0;
+}
+.container .parent .border-bottom div{ 
+    padding: 0;
+}
+.border-bottom input{
+
+    width: 35px;
+    height: 25px;
+}
+.border-bottom button {
+    width: 35px;
+    height: 25px;
+    line-height: 8px;
+   
+}

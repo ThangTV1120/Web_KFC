@@ -1,0 +1,29 @@
+.modal-content{
+    width: 662px;
+   
+}
+.modal-content .top-header{
+    /* position: relative; */
+}
+.modal-content .btn-close{
+    position: absolute;
+    left: 95%;
+    top: 10px;
+    margin: 0;
+}
+.modal-content .form-detail {
+
+    max-width: 400px;
+    height: 230px;
+}
+.modal-content h5{
+    font-weight: bold; font-size: 30px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.modal-content .form-detail .form-row{
+    height: 50px;
+}
+.modal-content .form-detail .form-row input{
+    height: 50px;
+}

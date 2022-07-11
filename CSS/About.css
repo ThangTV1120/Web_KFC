@@ -1,0 +1,294 @@
+.container{
+    background-color: white;
+}
+
+@media only screen and (max-width: 992px) { 
+    .pc { display: none;}
+    .mb { display: block}
+    body{
+        font-size: 2.4vw;
+    }
+    .about-page .nav-tabs-about .nav{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .kfc_vietnam_div1{
+        position: absolute;
+        top: 3%;
+        left: 10.25%;
+        width: 75%;
+    }
+    .kfc_vietnam_div2{
+        position: absolute;
+        top: 23%;
+        left: 20.25%;
+        width: 60%;
+    }
+    .kfc_vietnam_div3{
+        position: absolute;
+        top: 33%;
+        left: 12.25%;
+        width: 78%;
+        color: white;
+        text-align: right;
+    }
+    .kfc_vietnam_div4{
+        position: absolute;
+        top: 49%;
+        left: 12.25%;
+        width: 70%;
+    }
+    .kfc_vietnam_div5{
+        position: absolute;
+        top: 73%;
+        left: 5.25%;
+        width: 90%;
+        font-size: 1.6em ;
+    }
+    .kfc_vietnam_des {
+        font-size: 1.5em;
+        line-height: 1.333;
+    }
+
+/* history div */
+    .kfc_history_div1 {
+        position: absolute;
+        top: 9.5%;
+        left: 25.25%;
+        width: 55%;
+    }
+    .kfc_history_div2 {
+        position: absolute;
+        top: 21%;
+        left: 30.25%;
+        width: 50.79166666666667%;
+    }
+    .kfc_history_div3 {
+        position: absolute;
+        top: 46.5%;
+        left: 23.25%;
+        width: 65.79166666666667%;
+    }
+    .kfc_history_div4 {
+        position: absolute;
+        top: 58%;
+        left: 27.25%;
+        width: 50.79166666666667%;
+    }
+    .kfc_history_div5 {
+        position: absolute;
+        top: 71.6%;
+        left: 33.25%;
+        width: 50.79166666666667%;
+    }
+    .kfc_history_div6 {
+        position: absolute;
+        top: 83%;
+        left: 27.25%;
+        width: 45.79166666666667%;
+    }
+    .kfc_history_des {
+        font-size: 1.2em;
+        color: #000;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 992px) { 
+    .pc { display: block;}
+    .mb { display:none}
+    .kfc_vietnam_div1{
+        position: absolute;
+        top: 5.5%;
+        left: 31.25%;
+        width: 19.79166666666667%;
+        height: 6.9%;
+    }
+    .kfc_vietnam_div2{
+        position: absolute;
+        top: 23%;
+        left: 45.79166666666667%;
+        width: 19.01041666666667%;
+        height: 6.9%;
+    }
+    .kfc_vietnam_div3{
+        position: absolute;
+        top: 36.5%;
+        left: 41.6875%;
+        width: 29.16666666666667%;
+        height: 7.4%;
+        text-align: right;
+        color: white;
+    }
+    .kfc_vietnam_div4{
+        position: absolute;
+        top: 50.5%;
+        left: 26.5625%;
+        width: 22.39583333333333%;
+    }
+    .kfc_vietnam_div5 {
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 66%;
+        font-size: 1.6em ;
+    }
+    .kfc_vietnam_des{
+        font-size: 0.83vw;
+        line-height: 1.35;
+    }
+    .kfc_history_div1 {
+        position: absolute;
+        top: 7.5%;
+        left: 55.25%;
+        width: 32.79166666666667%;
+    }
+    .kfc_history_div2 {
+        position: absolute;
+        top: 24%;
+        left: 30.25%;
+        width: 30.79166666666667%;
+    }
+    .kfc_history_div3 {
+        position: absolute;
+        top: 45%;
+        left: 40.25%;
+        width: 47.79166666666667%;
+    }
+    .kfc_history_div4 {
+        position: absolute;
+        top: 57%;
+        left: 35.25%;
+        width: 50.79166666666667%;
+    }
+    .kfc_history_div5 {
+        position: absolute;
+        top: 72.6%;
+        left: 35.25%;
+        width: 50.79166666666667%;
+    }
+    .kfc_history_div6 {
+        position: absolute;
+        top: 84%;
+        left: 30.25%;
+        width: 25.79166666666667%;
+    }
+    .kfc_history_des {
+        font-size: 1.1em;
+        color: #000;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .about-page .about_content_head .card{
+        width: 500px;
+    }
+}
+
+.main_h1{
+    font-size: 3.333333333333333em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 1rem;
+    padding: 0.5cm;
+}
+
+
+.about-page .nav-tabs-about .nav-tabs .nav-item{
+    min-width: 34rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.about-page .nav-tabs-about .nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.nav_tabs .nav-tabs .nav-link.active{
+    background-color: white;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid red; 
+}
+
+.nav_tabs .nav-tabs .nav-link:hover{
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid red;
+}
+
+.about_content_head{
+    position: relative;
+}
+
+
+.kfc_vietnam_div5 .carousel-item{
+    position: relative;
+    left: 25%;
+    width: 100vh;
+}
+
+.about-slogan-text{
+    font-weight: bold;
+    color: #000;
+}
+
+/* kfc_news */
+
+.about_content_head .card{
+    width: 30rem;
+}
+
+.about_content_head .card-title{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.about_content_head .btn{
+    border: 1px black solid;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* kfc_history */
+.kfc_history_top{
+    text-align: right;
+    padding: 2.777777777777778rem 1.1rem 1rem;
+}
+
+.sec {
+    width: 100%;
+    position: relative;
+}
+
+.kfc_history_top_txt {
+    font-size: 1.1em;
+    color: #000;
+    padding-left: 30%;
+    margin: 1.111111111111111rem 0;
+}
+
+.kfc_history_top h3 {
+    font-size: 2.777777777777778em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.kfc_history_top h4 {
+    font-size: 1.533333333333333em;
+    color: #e4002b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+

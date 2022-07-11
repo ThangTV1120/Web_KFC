@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.footer{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+   line-height: 1.5;
+    color: #212529;
+    background-color: #fafafa;
+    display: block;
+}
+.footer .d-flex .logo_footer{
+    height: 4.444444444444444em;
+    max-width: 100%;
+}
+.footer .footer-header-1{
+    font-weight: bold;
+    color: black;
+}
+
+.footer .footer-header-1 a{
+    text-transform: uppercase capitalize;
+    color: #c70626;    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.footer .container div{
+    padding: 0;
+}
+
+.footer .footer-header-1 a:hover{
+    color: #c70626;}
+
+.footer .footer-col div ul{
+    padding: 0px;
+}
+
+.footer .footer-col div ul li{
+    list-style-type: none;
+}
+
+.footer .footer-col div ul li a{
+    text-transform: capitalize;
+    color: #c70626;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: all 0.3 ease;
+}
+
+.footer .footer-col div ul li a:hover{
+    color: #c70626;}
+
+.footer .justify-content-center{
+    height: 200px;
+    width: 100%;
+}
+
+/* .footer .d-flex .logo_footer{
+-    width: 25%;
+-    height: 35%;
+-} */
+
+.footer .footer-header {
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.footer .footer-col .nav-social{
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer .nav li a img{
+    width: 37.40px;
+    height: 26.28px;
+}
+ 
+.footer .nav-link{
+    padding:0;
+    margin-left: 0;
+}
+
+.footer .nav-social .nav-link{
+    font-size: 35.45px 26.28px  ;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    margin-left: 0;
+}
+
+.footer .footer-col ul li a img:hover{
+    color: #c70626;
+}
+
+.footer .footer_midder{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.footer .footer_midder .text{
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.footer .footer_bottom{
+    padding-bottom: 20px;
+}
+
+.footer .footer_bottom p a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer .footer_bottom p a:hover{
+    color: #c70626;
+}

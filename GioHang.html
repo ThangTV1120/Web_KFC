@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    <link rel="stylesheet" href="./Bootstraps_css/bootstrap.css">
+    <link rel="stylesheet" href="./CSS/GioHang.css">
+    <!-- <link rel="stylesheet" href="./CSS/style.css"> -->
+    <script src="./JS/GioHang.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script src="./JS/login.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="top-header  ">
+                <div class="row no-gutters">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="main-header ">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/KFC.html#" style="height: 72px;">
+                        <img class="pc" src="./images/hopKFC.png" alt="" style="height: 72px; width: 72px;">
+                        <!-- <img class="mb" src="./images/logo_mb.png" alt="" > -->
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding: 0;">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item1">
+                                <a class="nav-link" style="color: red; padding: 15px;" aria-current="page"
+                                    href="#">VN</a>
+                            </li>
+                            <li class="nav-item2" id="customer">
+                                <a class="nav-link" id="modal-login" style="font-weight: bold; padding: 15px;"
+                                    data-bs-toggle="modal" data-bs-target="#login" href="#">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="bottom-header " style="padding: 0 ;" data-spy="affix" data-offset-top="200">
+                <div class="sidebar_inner wap_nav_fix w-100">
+                    <div class="navbar-scroller">
+                        <ul class="nav justify-content-start mb-0 ">
+
+                            <li class="nav-item active">
+                                <a class="nav-link active" href="/KFC_ComBo_1_ng.html">
+                                    Combo 1 người</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/KFC_Combo_Nhom.html">Combo nhóm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/KFC_UuDai.html">Ưu đãi-Món mới</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="deliver_wap">
+                        <div class="deliver_box d-flex align-items-lg-center align-items-end ">
+                            <div class="cot_left row">
+                                <div class="col-12 col-lg-auto" style="margin-right:15px ;">
+                                    <span> Giao hàng đến:</span>
+                                </div>
+                                <div class="col-12 col-lg-auto" style="font-weight: bold;"><span id="address"></span>
+                                </div>
+                            </div>
+                            <div class="cot_right row">
+                                <a href="/DiaChi.html">
+                                    <span>Thay đổi</span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="dropdown">
+                            <a href="./GioHang.html" class="btn d-flex ">
+                                <div class="icon" id="icon">
+                                    <span class="number" style="font-size: 14px;" id="countSP">0</span>
+                                </div>
+                                <div class="text" id="price">Giỏ hàng</div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" style="background-color: #fff ;">
+        <div class=" text-uppercase" style="font-weight:bold; text-align: center; font-size: 30px;">Giỏ hàng của bạn
+        </div>
+        <div class="row border-bottom fw-bold menu" style="margin: 0;">
+            <div class="col-1"> STT</div>
+            <div class="col-2 img text-center">Hình</div>
+            <div class="col-2 text-center">Tên</div>
+            <div class="col-1 ">Giá</div>
+            <div class="col-1 text-center" style="padding: 0;">Số Lượng</div>
+            <div class="col-4  text-center">Mô tả</div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row parent " style="margin: 0;">
+
+        </div>
+        <div class="row">
+            <div class="" style="font-weight:bold;">
+                Tổng Hóa Đơn:
+                <span id="tong"></span>
+            </div>
+        </div>
+        <h4 class="text-center" style="font-weight: bold;" id="thongbao">
+
+        </h4>
+        <div class="text-center ">
+            <button class="btn btn-danger w-25 text-center" data-bs-toggle="modal" data-bs-target="#Cart">Thanh
+                Toán</button>
+        </div>
+    </div>
+    <div class="modal" id="Cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" style=" font-weight:bold ; margin: 0;"
+                        id="exampleModalLabel">Thông Báo
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex" style="font-weight:bold ;">
+                    Xác nhận thanh toán
+                    <div class="modal-hoadon">
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                        onclick="thanhtoan()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal login -->
+    <div class="modal" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="top-header pc  ">
+                    <div class="row no-gutters">
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                <h5 class="modal-title text-uppercase text-center" id="loginLabel">Đăng Nhập</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <form class="form-detail container" name="myForm" method="post" onsubmit="Login()">
+                    <div class="form-row " style="margin-bottom: 20px;">
+                        <input type="email text" id="loginemail" name="loginemail" class="form-control input-text"
+                            placeholder="Email">
+                    </div>
+                    <div class="form-row " style="margin-bottom: 10px;">
+                        <input type="password" name="password" id="password" class="form-control input-text"
+                            placeholder="Mật khẩu">
+                    </div>
+                    <div class="d-flex" style="height: 50px;">
+                        <button type="button" id="login" class="btn btn-danger text-uppercase" data-bs-dismiss="modal" style="width: 100%;"
+                            onclick="Login()">Đăng Nhập</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="./Bootstrap_JS/bootstrap.js"></script>
+    <script>
+        showcard();
+
+        let tien = document.getElementById('tong');
+        var tong = tien.value;
+        let hoadon = document.querySelector('.modal-hoadon');
+        hoadon.innerHTML = ': ' + tong + 'đ';
+        function xoa(x) {
+            var node = x.parentElement;
+            node.remove();
+            tong -= parseInt(node.children[4].value * node.children[5].children[1].value);
+            tien.innerHTML = tong + 'đ';
+            hoadon.innerHTML = ': ' + tong + 'đ';
+            console.log(node.children[5].children[1].value);
+        }
+
+        function add(x) {
+            var node = x.parentElement.parentElement;
+            let number = x.parentElement;
+            var count = number.children[1].value;
+            if (count < 10) {
+                count++;
+                number.children[1].value = count;
+                tong += parseInt(node.children[4].value)
+                tien.innerHTML = tong + 'đ';
+                hoadon.innerHTML = ': ' + tong + 'đ';
+                console.log(tong);
+            }
+
+        }
+        function dele(x) {
+            var node = x.parentElement.parentElement;
+            let number = x.parentElement;
+            var count = number.children[1].value;
+
+            if (count > 1) {
+                count--;
+                number.children[1].value = count;
+                tong -= parseInt(node.children[4].value)
+                tien.innerHTML = tong + 'đ';
+                hoadon.innerHTML = ': ' + tong + 'đ';
+                console.log(tong);
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

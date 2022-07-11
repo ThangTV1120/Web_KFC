@@ -1,0 +1,106 @@
+.container{
+    background-color: white;
+}
+
+
+
+.nav_tabs .nav-tabs .nav-item{
+    min-width: 27rem;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.nav_tabs .nav-tabs .nav-link{
+    border: none;
+    border-radius: 0;
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.nav_tabs .nav-tabs .nav-link.active{
+    background-color: white;
+    color: #000;
+    font-weight: bold !important;
+    border-bottom: 3px solid red !important; 
+}
+
+.nav_tabs .nav-tabs .nav-link:hover{
+    color: #000;
+    font-weight: bold !important;
+    border-bottom: 3px solid red !important;
+}
+/* Card */
+.kfc-vietnam-card{
+    position: relative;
+}
+
+.kfc-vietnam-p1 {
+    position: absolute;
+    top: 5%;
+    left: 31.25%;
+    width: 19.79166666666667%;
+    height: 6.9%;
+    font-size: 15px;
+}
+
+.kfc-vietnam-p2 {
+    position: absolute;
+    top: 23%;
+    left: 45.79166666666667%;
+    width: 19.01041666666667%;
+    height: 6.9%;
+}
+
+.kfc-vietnam-p3 {
+    position: absolute;
+    top: 36.5%;
+    left: 41.6875%;
+    width: 29.16666666666667%;
+    height: 7.4%;
+    text-align: right;
+}
+
+.kfc-vietnam-p4 {
+    position: absolute;
+    top: 50.5%;
+    left: 26.5625%;
+    width: 22.39583333333333%;
+}
+
+.kfc-vietnam-p5 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 66%;
+}
+
+/* milestone */
+.kfc-vietnam-p5 .carousel-item{
+    position: relative;
+    left: 15%;
+    width: 100vh;
+}
+
+.about-slogan-text{
+    font-size: 1.041666666666667vw;
+    font-weight: bold;
+    color: #000;
+    text-align: justify;
+    width: 55%;
+    margin: 4% auto;
+    font-family: 'National2Condensed';
+}
+
+.about-slogan-text{
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Mukta', sans-serif;
+}
+
+@media only screen and (max-width: 991px) { 
+    .kfc-vietnam-p5{
+        font-size: 3em;
+        line-height: 1.333;
+}
+}

@@ -1,0 +1,25 @@
+img {
+   width: 50px;
+   height: 50px;
+}
+
+.nav-link{
+   color: #000;
+   background-color: #FFF;
+   font-weight: bold;
+}
+
+.flex-column .nav-link:hover{
+   background-color: #000;
+   color: #FFF;
+}
+
+.table .btn-hover:hover{
+   background-color: #000;
+   color: #FFF;
+}
+
+.text-start{
+   font-weight: bold;
+   font-size: 115%;
+}

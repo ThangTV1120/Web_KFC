@@ -1,0 +1,50 @@
+.kfc_history_top{
+    text-align: right;
+    padding: 2.777777777777778rem 1.1rem 1rem;
+}
+
+.kfc_history_top h3{
+    font-size: 2.777777777777778em;
+    color: #000;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.kfc_history_top_text{
+    font-size: 0.8888888888888889em;
+    color: #000;
+    padding-left: 30%;
+    margin: 1.111111111111111rem 0;
+
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        font-size: 0.9375vw;
+        font-size: 17px;
+    }
+}
+
+.kfc_history{
+    position: relative;
+}
+
+.kfc_history_div1{
+    position: absolute;
+    width: 25rem;
+    left: 55.66666666666667rem;
+    top: 33rem;
+}
+
+.kfc_history_scroll-bg{
+    width:400px;
+    margin:10% auto;
+}
+
+.kfc_history_scroll-div{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+

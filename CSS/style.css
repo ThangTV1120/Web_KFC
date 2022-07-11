@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
+
+/*font-family: 'Asap Condensed', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(/images/bg.jpg) repeat top center fixed;
+    height: 1000px;
+    font-weight: 400;
+    color: #707070;
+}
+.container {
+ 
+    max-width: 1024px;
+  padding: 0 !important;
+}
+
+/* Top-header */
+.top-header{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.top-header .row .col{
+    padding: 0;
+    height:24px ;
+    width: 40px;
+}
+.top-header div.col:nth-of-type(1),
+.top-header div.col:nth-of-type(3),
+.top-header div.col:nth-of-type(5) , 
+.top-header div.col:nth-of-type(7),
+.top-header div.col:nth-of-type(9) {
+    background-color: red;
+   
+}
+/* Main-header */
+.main-header .navbar .navbar-brand{
+padding: 0;
+height: 72px;
+}
+.main-header .navbar{
+    padding: 1em 1.11111111em;
+    align-items: center;
+    margin: 0;
+}
+.nav-item1{
+    position: relative;
+}
+.main-header .navbar-nav .nav-link{
+text-decoration: none;
+}
+.main-header .nav-item1::after{
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-header .navbar-nav{
+    float: right;
+}
+
+
+/* Bottom-header */
+.bottom-header {
+    margin-bottom: 0;
+    padding: 0;
+    align-items: center;
+    position: relative;
+    background-color: #f8f8f8;
+}
+.bottom-header .navbar-toggler{
+    display: none;
+}
+.bottom-header .nav-item:hover .nav-link{
+    background-color: #000;
+    color: white;
+}
+.bottom-header .nav-link{
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0.9722222222222222em 0.7em ;
+    text-transform: uppercase;
+}
+.bottom-header .deliver_wap{
+    position: relative;
+    background-color: #fff;
+}
+
+
+.bottom-header .deliver_box .cot_left{
+    margin: 0;
+}
+.bottom-header .deliver_box .cot_left div {
+padding: 0;
+}
+
+.bottom-header .deliver_box .cot_right{
+    padding-left: 80px;
+    margin: 0;
+
+}
+.bottom-header .deliver_box .cot_right a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0;
+}
+.bottom-header .box{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.bottom-header .box .icon{
+    background-image: url("https://kfcvietnam.com.vn/templates/images/cart_icon.png");
+    min-width: 1.8333333333333em; 
+    height: 1.9em;
+    line-height: 1.8;
+    background-size: 100% ;
+    color: #000;
+    margin-right:0.5em ;
+    font: 1em;
+    background-repeat: no-repeat;
+    padding: 0 2px;
+}
+.bottom-header .box .icon .number{
+font-size: 0.8em;
+font-weight: bold;
+text-transform: uppercase;
+}
+.bottom-header .box .text{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 1.9;
+    color: red;
+}
+.bottom-header.box .dropdown{
+    padding: 0.8em 1em;
+}
+
+/* homepage */
+
+  .carousel .carousel-indicators .carouselButton {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    padding: 2px;
+    transition: all 0.2s;
+    border: solid red 1px;
+    background-color: white;
+    z-index: 0 !important;
+  }
+  
+ #homepage .box_homepage{
+padding-top: 65px;
+background-color: #fff;
+ }
+ .box_homepage .nav_menu_header{
+    padding: 1rem 2rem 1rem;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    line-height: 1.5;
+    font-style: normal;
+ }
+ .box_homepage .nav_menu .nav-link{
+     color:rgb(228, 0, 43) ;
+     font-size: 16px;
+     font-weight: bold;
+     line-height: 1.5;
+     padding-left: 2rem;
+     text-decoration: none;
+ }
+
+ .box_homepage .col-left{
+    max-width: 21.2890625%;
+   padding: 0;
+   padding-left: 10px;
+ }
+ .box_homepage.col-right{
+     padding: 0;
+ }
+ .box_homepage .col-left .nav{
+     align-items: center;
+     
+ }
+.box_homepage .bigorder_appstore img{
+    width: 100%;
+}
+#address{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: flex-start;
+}
