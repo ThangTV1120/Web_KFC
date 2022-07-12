@@ -1,11 +1,22 @@
 /* màn hình Mobile */
 /* screen< Max */
 @media only screen and (max-width: 990px) { 
-    .top-header  {display: none;}
+     .top-header  .row {display: none;} 
     .main-header .pc_main  {display: none;}
+
+  /* .top-header .pc_main #navbarNavAltMarkup{
+    display: none !important;
+  } */
+  .top-header{
+    justify-content: start;
+  }
     /* .main-header .respon  {display: block !important;} */
   }
-
+ /* @media only screen and(max-width: 769px){
+    .top-header .pc_main #navbarNavAltMarkup{
+      display: block!important;
+    }
+  } */
 @media only screen and (max-width: 990px) { 
     .bottom-header .deliver_box {
     position:revert;
@@ -59,6 +70,9 @@
   .bottom-header .box .dropdown{
     padding: 10px;
   }
+  .affix {
+    top:0px;
+  }
 }
 
 /* screen > min */
@@ -72,6 +86,8 @@
      right: 240px;
      bottom:0;
   } 
+  .top-header .pc_main  {display: none;}
+  
   header .affix {
       top: 0;
       z-index: 999;

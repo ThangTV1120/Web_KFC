@@ -24,7 +24,25 @@
   <header id="header">
     <div class="container">
       <div class="top-header  ">
-        <div class="row no-gutters">
+        <div class="pc_main">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light " style="justify-content:start; margin: 0px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="./images/menu_btn.jpg" alt=""><span
+                        style="color: red; font-weight: bold; font-style:italic; font-size: 30px; line-height: 3; ">KFC</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+               <a class="dropdown-item" href="KFC_ComBo_1_ng.html">ComBo 1 Người</a>
+                <a class="dropdown-item" href="KFC_Combo_Nhom.html">ComBo Nhóm</a>
+                <a class="dropdown-item" href="KFC_UuDai.html">Ưu Đãi- Món mới</a>
+                  <a class="dropdown-item" id="modal-login" style="font-weight: bold" data-bs-toggle="modal"
+                    data-bs-target="#login" href="#">Đăng nhập</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="row no-gutters ">
           <div class="col"></div>
           <div class="col"></div>
           <div class="col"></div>
@@ -38,26 +56,24 @@
       </div>
       <div class="main-header ">
         <div class="pc_main">
-
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <a class="navbar-brand" href="http://127.0.0.1:5500/KFC.html#" style="height: 72px;">
-            <img class="pc" src="./images/hopKFC.png" alt="" style="height: 72px; width: 72px;">
-            <!-- <img class="mb" src="./images/logo_mb.png" alt="" > -->
-          </a>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding: 0;">
-            <ul class="navbar-nav ">
-              <li class="nav-item1">
-                <a class="nav-link" style="color: red; padding: 15px;" aria-current="page" href="#">VN</a>
-              </li>
-              <li class="nav-item2" id="customer">
-                <a class="nav-link" id="modal-login" style="font-weight: bold; padding: 15px;" data-bs-toggle="modal"
-                  data-bs-target="#login" href="#">Đăng nhập</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/KFC.html#" style="height: 72px;">
+              <img class="pc" src="./images/hopKFC.png" alt="" style="height: 72px; width: 72px;">
+              <!-- <img class="mb" src="./images/logo_mb.png" alt="" > -->
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="padding: 0;">
+              <ul class="navbar-nav ">
+                <li class="nav-item1">
+                  <a class="nav-link" style="color: red; padding: 15px;" aria-current="page" href="#">VN</a>
+                </li>
+                <li class="nav-item2" id="customer">
+                  <a class="nav-link" id="modal-login" style="font-weight: bold; padding: 15px;" data-bs-toggle="modal"
+                    data-bs-target="#login" href="#">Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
       <div class="bottom-header " style="padding: 0 ;" data-spy="affix" data-offset-top="200">
         <div class="sidebar_inner wap_nav_fix w-100">
@@ -361,8 +377,8 @@
             <input type="password" name="password" id="password" class="form-control input-text" placeholder="Mật khẩu">
           </div>
           <div class="d-flex" style="height: 50px;">
-            <button type="submit" id="login" class="btn btn-danger text-uppercase" style="width: 100%;"  data-bs-dismiss="modal"
-              >Đăng Nhập</button>
+            <button type="submit" id="login" class="btn btn-danger text-uppercase" style="width: 100%;"
+              data-bs-dismiss="modal">Đăng Nhập</button>
           </div>
 
         </form>
